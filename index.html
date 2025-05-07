@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,60 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mitchell Kiriazes | Cybersecurity Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://jeromelachaud.com/grayscale-theme/css/grayscale.min.css">
   <style>
     body {
       font-family: 'Roboto Mono', monospace;
-      background-color: #1e1e1e;
-      color: #cfd8dc;
-      margin: 0;
-      padding: 0;
     }
-
-    header {
-      background-color: #2e7d32;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-    }
-
-    nav {
-      text-align: center;
-      margin: 2rem 0;
-    }
-
-    nav a {
-      color: #81c784;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 1rem;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    h2 {
-      color: #81c784;
-      border-bottom: 2px solid #81c784;
-      padding-bottom: 0.25rem;
-    }
-
     .resume-button {
       display: inline-block;
       background-color: #2e7d32;
@@ -69,72 +20,92 @@
       border-radius: 5px;
       margin-top: 1rem;
     }
-
     .project {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
-
     .project h3 {
-      margin-bottom: 0.25rem;
-      color: #aed581;
+      color: #00ffae;
     }
-
+    #about, #projects, #resume {
+      padding: 3rem 0;
+    }
     footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: #757575;
+      color: #ccc;
     }
   </style>
 </head>
 
-<body>
-  <header>
-    <h1>Mitchell Kiriazes</h1>
-    <p>Cybersecurity Specialist • Computer Scientist • Cavalier</p>
-    <p><a href="mailto:Mitchell.Kiriazes@gmail.com" style="color:white; text-decoration: underline;">Mitchell.Kiriazes@gmail.com</a> | <a href="https://linkedin.com/in/mitchellkiriazes" target="_blank" style="color:white; text-decoration: underline;">LinkedIn</a> | <a href="https://github.com/M-Kiriazes" target="_blank" style="color:white; text-decoration: underline;">GitHub</a></p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Mitchell Kiriazes</a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resume">Resume</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <div class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I’m a cybersecurity professional and computer science graduate passionate about systems hardening, secure development, and cyber resilience. From leading visual instruction in marching band to competing nationally in cyber defense competitions, I bring precision, leadership, and adaptability to every team I join.</p>
-    </section>
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center justify-content-center">
+      <div class="text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Mitchell Kiriazes</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Cybersecurity Specialist • Computer Scientist • Cavalier</h2>
+        <p class="text-white-50">
+          <a href="mailto:Mitchell.Kiriazes@gmail.com" style="color:white; text-decoration: underline;">Mitchell.Kiriazes@gmail.com</a> |
+          <a href="https://linkedin.com/in/mitchellkiriazes" target="_blank" style="color:white; text-decoration: underline;">LinkedIn</a> |
+          <a href="https://github.com/M-Kiriazes" target="_blank" style="color:white; text-decoration: underline;">GitHub</a>
+        </p>
+      </div>
+    </div>
+  </header>
 
-    <section id="projects">
-      <h2>Highlighted Projects</h2>
+  <section id="about">
+    <div class="container">
+      <h2 class="text-center">About Me</h2>
+      <p class="lead text-center">I’m a cybersecurity professional and computer science graduate passionate about systems hardening, secure development, and cyber resilience. From leading visual instruction in marching band to competing nationally in cyber defense competitions, I bring precision, leadership, and adaptability to every team I join.</p>
+    </div>
+  </section>
 
+  <section id="projects" class="bg-light">
+    <div class="container">
+      <h2 class="text-center">Highlighted Projects</h2>
       <div class="project">
         <h3>Capstone - ATAK Plugin for USV Command</h3>
         <p>Developed a command and control plugin for the Android Tactical Assault Kit (ATAK) enabling real-time tracking and operations for unmanned surface vessels (USVs) in collaboration with the Naval Surface Warfare Center Dahlgren Division.</p>
       </div>
-
       <div class="project">
         <h3>Cyber Resiliency and Measurement Challenge</h3>
         <p>Engineered AI-driven analysis tools using LLaMA and RAG to measure infrastructure security by parsing PDFs, correlating CVEs, and dynamically scoring systems based on live mitigation effectiveness.</p>
       </div>
-
       <div class="project">
         <h3>Hivestorm National Cybersecurity Competition</h3>
         <p>Led Windows machine hardening during a national live-fire competition. Removed malware, remediated misconfigurations, and implemented secure policies, contributing to a Top-10 national finish out of 413 teams.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="resume">
+  <section id="resume">
+    <div class="container text-center">
       <h2>Resume</h2>
       <p>You can view or download my full resume here:</p>
       <a href="Resume%20-%20Mitchell%20Kiriazes%20.pdf" class="resume-button" target="_blank">Download Resume</a>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>Designed & Built by Mitchell Kiriazes | &copy; 2025</p>
+  <footer class="text-center">
+    <div class="container">
+      <p> Built by Mitchell Kiriazes | &copy; 2025</p>
+    </div>
   </footer>
+
+  <script src="https://jeromelachaud.com/grayscale-theme/vendor/jquery/jquery.min.js"></script>
+  <script src="https://jeromelachaud.com/grayscale-theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://jeromelachaud.com/grayscale-theme/js/grayscale.min.js"></script>
 </body>
 
 </html>
+
