@@ -32,11 +32,15 @@
 
 /* Mountain Background Section */
 .bg-mountain {
-    background: red !important;
-    color: yellow !important;
+.bg-mountain {
+    background: url('/img/mountains.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
     position: relative;
     padding: 100px 0;
     text-align: center;
+}
+
 }
 
 }
