@@ -32,7 +32,6 @@
 
 /* Mountain Background Section */
 .bg-mountain {
-.bg-mountain {
     background: url('/img/mountains.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
